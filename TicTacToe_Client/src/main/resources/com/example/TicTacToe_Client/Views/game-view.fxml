@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TicTacToe_Client.Controllers.GameController">
+   <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToMainMenu" text="Back" />
+   <Line endX="250.0" endY="350.0" fill="DARKBLUE" startX="250.0" startY="50.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="350.0" endY="350.0" fill="DARKBLUE" startX="350.0" startY="50.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="450.0" endY="150.0" fill="DARKBLUE" startX="150.0" startY="150.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="450.0" endY="250.0" fill="DARKBLUE" startX="150.0" startY="250.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="450.0" endY="350.0" fill="DARKBLUE" startX="150.0" startY="350.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="450.0" endY="50.0" fill="DARKBLUE" startX="150.0" startY="50.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="150.0" endY="350.0" fill="DARKBLUE" startX="150.0" startY="50.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Line endX="450.0" endY="350.0" fill="DARKBLUE" startX="450.0" startY="50.0" stroke="DARKBLUE" strokeWidth="5.0" />
+   <Pane fx:id="square0" layoutX="150.0" layoutY="52.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="0">
+      <children>
+         <Pane fx:id="X0" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O0" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square1" layoutX="252.0" layoutY="52.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="1">
+      <children>
+         <Pane fx:id="X1" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O1" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square2" layoutX="353.0" layoutY="52.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="2">
+      <children>
+         <Pane fx:id="X2" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O2" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square3" layoutX="153.0" layoutY="153.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="3">
+      <children>
+         <Pane fx:id="X3" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O3" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square4" layoutX="252.0" layoutY="153.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="4">
+      <children>
+         <Pane fx:id="X4" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O4" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square5" layoutX="353.0" layoutY="153.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="5">
+      <children>
+         <Pane fx:id="X5" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O5" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square6" layoutX="153.0" layoutY="253.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="6">
+      <children>
+         <Pane fx:id="X6" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O6" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square7" layoutX="252.0" layoutY="253.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="7">
+      <children>
+         <Pane fx:id="X7" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O7" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane fx:id="square8" layoutX="353.0" layoutY="253.0" onMouseClicked="#squareSelected" prefHeight="95.0" prefWidth="96.0" userData="8">
+      <children>
+         <Pane fx:id="X8" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Line endX="80.0" endY="20.0" startX="20.0" startY="80.0" strokeWidth="5.0" />
+               <Line endX="80.0" endY="80.0" startX="20.0" startY="20.0" strokeWidth="5.0" />
+            </children>
+         </Pane>
+         <Pane fx:id="O8" prefHeight="95.0" prefWidth="96.0" visible="false">
+            <children>
+               <Circle fill="WHITE" radius="40.0" stroke="RED" strokeType="INSIDE" strokeWidth="5.0" translateX="50.0" translateY="50.0">
+                  <rotationAxis>
+                     <Point3D />
+                  </rotationAxis>
+               </Circle>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <Pane layoutX="14.0" layoutY="51.0" prefHeight="95.0" prefWidth="122.0">
+      <children>
+         <Label fx:id="playerXName" layoutX="41.0" layoutY="17.0" prefHeight="17.0" prefWidth="67.0" text="Player X">
+            <font>
+               <Font name="Fira Code Regular" size="12.0" />
+            </font></Label>
+         <Label fx:id="playerOName" layoutX="41.0" layoutY="56.0" prefHeight="17.0" prefWidth="67.0" text="Player O">
+            <font>
+               <Font name="Fira Code Regular" size="12.0" />
+            </font></Label>
+         <Line endX="20.0" endY="25.0" layoutX="5.0" layoutY="5.0" startX="10.0" startY="15.0" strokeWidth="3.0" />
+         <Line endX="20.0" endY="15.0" layoutX="5.0" layoutY="5.0" startX="10.0" startY="25.0" strokeWidth="3.0" />
+         <Circle fill="WHITE" layoutX="20.0" layoutY="64.0" radius="10.0" stroke="RED" strokeType="INSIDE" strokeWidth="3.0" />
+      </children>
+   </Pane>
+   <Button fx:id="restartButton" layoutX="479.0" layoutY="339.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="40.0" prefWidth="96.0" text="Restart" visible="false" />
+   <Label fx:id="gameState" alignment="CENTER" layoutX="149.0" layoutY="10.0" prefHeight="25.0" prefWidth="305.0" text="Game State" textAlignment="CENTER" textFill="DARKBLUE">
+      <font>
+         <Font name="Fira Code Bold" size="20.0" />
+      </font>
+   </Label>
+   <Line fx:id="winRow1" endX="425.0" endY="100.0" startX="175.0" startY="100.0" strokeWidth="5.0" />
+   <Line fx:id="winRow2" endX="425.0" endY="200.0" startX="175.0" startY="200.0" strokeWidth="5.0" />
+   <Line fx:id="winRow3" endX="425.0" endY="300.0" startX="175.0" startY="300.0" strokeWidth="5.0" />
+   <Line fx:id="winCol1" endX="200.0" endY="325.0" startX="200.0" startY="75.0" strokeWidth="5.0" />
+   <Line fx:id="winCol2" endX="300.0" endY="325.0" startX="300.0" startY="75.0" strokeWidth="5.0" />
+   <Line fx:id="winCol3" endX="400.0" endY="325.0" startX="400.0" startY="75.0" strokeWidth="5.0" />
+   <Line fx:id="winDiagLeft" endX="425.0" endY="325.0" startX="175.0" startY="75.0" strokeWidth="5.0" />
+   <Line fx:id="winDiagRight" endX="175.0" endY="325.0" startX="425.0" startY="75.0" strokeWidth="5.0" />
+</AnchorPane>

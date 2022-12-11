@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe_server.Controllers.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="80.0" prefHeight="42.0" prefWidth="337.0" text="TicTacToe Server">
+         <font>
+            <Font name="Fira Code Regular" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="startStopButton" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="156.0" mnemonicParsing="false" onAction="#startStop" prefHeight="42.0" prefWidth="116.0" style="-fx-background-color: LIGHTGREEN;" text="start" textAlignment="CENTER" textFill="#006300">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="242.0" layoutY="246.0" prefHeight="34.0" prefWidth="116.0" text="Users Count" textAlignment="CENTER" textFill="DARKBLUE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="usersCount" alignment="CENTER" layoutX="272.0" layoutY="280.0" prefHeight="35.0" prefWidth="56.0" text="0" textFill="DARKBLUE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

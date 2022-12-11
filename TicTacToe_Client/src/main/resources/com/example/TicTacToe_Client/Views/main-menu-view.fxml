@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TicTacToe_Client.Controllers.MainMenuController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="67.0" prefHeight="38.0" prefWidth="287.0" text="TicTacToe" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button layoutX="210.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="Single-player" />
+      <Button layoutX="210.0" layoutY="224.0" mnemonicParsing="false" onAction="#goToMultiPlayer" prefHeight="25.0" prefWidth="181.0" text="Multi-player" />
+      <Button layoutX="210.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="181.0" text="Online" />
+   </children>
+</AnchorPane>
